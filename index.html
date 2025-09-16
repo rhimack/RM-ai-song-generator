@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>AI song generator</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to the AI song generator</h1>
+      </header>
+
+      <main>
+        <form id="song-form">
+          <input
+            type="text"
+            placeholder="Please enter the genre of song to generate some lyrics"
+            autofocus
+            required
+            autocomplete="off"
+            class="instruction"
+            id="user-instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="song-generated" id="song">
+          <br />
+        </div>
+      </main>
+
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/rhimack">Rhian Mackness</a> and
+        <a
+          href="https://github.com/rhimack/welsh-name-generator.git"
+          target="_blank"
+        >
+          is open sourced on GitHub</a
+        >
+        and is hosted on
+        <a href="https://ai-welsh-name-generator.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
